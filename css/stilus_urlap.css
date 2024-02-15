@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -50,6 +49,8 @@ nav ul a {
 }
 
 article {
+    border: 1px solid #ff6000;
+    padding: 10px;
     flex: 0 0 100%;
     display: flexbox;
     flex-direction: column;
@@ -76,8 +77,16 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+    
     main {
         width: 100%;
+    }
+
+    header {
+        flex: 0 0 100%;
     }
 
     nav ul {
@@ -85,7 +94,28 @@ footer {
         gap: 20px;
     }
 
+    nav ul a {
+        font-size: 1.75vh;
+    }
+
+    label {
+        font-size: 1.75vh;
+    }
+
+    textarea {
+        font-size: 1.75vh;
+    }
+
+    article {
+        flex: 0 0 100%;
+    }
+
     nav ul li {
         flex: 0 0 100%;
+    }
+
+    footer {
+        flex: 0 0 100%;
+        font-size: 1.75vh;
     }
 }
