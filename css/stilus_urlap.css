@@ -77,10 +77,6 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-    body {
-        padding: 0;
-    }
-    
     main {
         width: 100%;
     }
@@ -104,6 +100,7 @@ footer {
 
     textarea {
         font-size: 1.75vh;
+        width: 100%;
     }
 
     article {
