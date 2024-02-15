@@ -1,0 +1,22 @@
+body {
+    background-color: #131919;
+    color: #ff6000;
+}
+
+nav ul a:link {
+    color: #ff6000;
+}
+
+nav ul a:visited {
+    color: #ff6000;
+}
+
+nav ul a:hover {
+    background-color: #ff6000;
+    color: #131919;
+}
+
+nav ul a:active {
+    background-color: #af4300;
+    color: #131919;
+}

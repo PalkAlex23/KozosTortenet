@@ -6,12 +6,14 @@
     <meta name="keywords" content="half-life, simon, gergő, szabó-mester, alex">
     <meta name="author" content="Simon Gergő, Szabó-Mester Alex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stilus_urlap.css">
+    <link rel="stylesheet" href="css/stilus_urlap.css">
     <title>Űrlap oldal</title>
 </head>
 <body>
     <main>
-        <header></header>
+        <header>
+            <h1>A Half-Life 2 története (Angol nyelven)</h1>
+        </header>
         <nav>
             <ul>
                 <li><a href="index.html">Főoldal</a></li>
@@ -23,19 +25,45 @@
             <!-- Kérdések: Mennyire tetszett a történet?; Átlátható volt az oldal a történet szempontjából?; Írja meg, hogy min kellett volna javítani a történeten! (opciónális) -->
             <!-- Elégedett volt-e a történet végkifejletével?; (egyet pluszba találjak ki) -->
             <div class="elem">
-
+                <label for="tetszes">
+                    Mennyire tetszett a történet?
+                </label><br>
+                <textarea name="tetszes" id="tetszes" cols="100%" rows="10" placeholder="Ide írhatja a véleményét"></textarea>
             </div>
             <div class="elem">
-
+                <label for="atlathato">
+                    Átlátható volt az oldal a történet szempontjából?
+                </label><br>
+                <input type="radio" name="atlathato" id="teljes">
+                <label for="teljes">Igen, teljes mértékben meg vagyok elégedve</label><br>
+                <input type="radio" name="atlathato" id="minihiba">
+                <label for="minihiba">Igen, meg vagyok elégedve, csak minimálisan kéne javítani az olvashatóság érdekében</label><br>
+                <input type="radio" name="atlathato" id="neutral">
+                <label for="neutral">Semlegesen állok hozzá (jó is meg nem is)</label><br>
+                <input type="radio" name="atlathato" id="kritikus">
+                <label for="kritikus">Nem vagyok többnyire megelégedve, több helyen érdemes javítani</label><br>
+                <input type="radio" name="atlathato" id="fullnega">
+                <label for="fullnega">Egyáltalán nem vagyok megelégedve</label><br>
             </div>
             <div class="elem">
-
+                <label for="eipto">
+                    Írja meg, hogy Ön mit javítana a történeten? (opcionális)
+                </label>
+                <textarea name="tetszes" id="tetszes" cols="100%" rows="10" placeholder="Ide írhatja a gondolatait"></textarea>
             </div>
             <div class="elem">
-
+                <label for="elegedettseg">
+                    Elégedett volt-e a történet végkifejletével?
+                </label><br>
+                <input type="radio" name="elegedettseg" id="igen">
+                <label for="teljes">Igen</label><br>
+                <input type="radio" name="elegedettseg" id="nem">
+                <label for="minihiba">Nem</label><br>
+                <input type="radio" name="elegedettseg" id="nemtudom">
+                <label for="neutral">Nem szeretnék válaszolni rá</label><br>
             </div>
             <div class="elem">
-
+                <input type="submit" value="Küldés">
             </div>
         </article>
         <footer>
